@@ -1,0 +1,27 @@
+server:
+  port: 9990
+
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  user: root
+  password: 11223344
+  db: panDemo
+
+redis:
+  addr: 127.0.0.1:6379
+  password:
+  db: 2
+  # 登陆 Token过期时间 单位 小时
+  tokenTime: 1
+  # 验证码过期时间 单位 分钟
+  emailTime: 5
+
+emailCode:
+  seedEmail: w2477284535@163.com
+  mailPassword: FBBUWAVMRDHYSNZC
+  seedSubject: 验证码发送测试
+  eFrom: 验证码测试 <w2477284535@163.com>
+  addr: smtp.163.com:465
+  host: smtp.163.com
+  Server: smtp.163.com

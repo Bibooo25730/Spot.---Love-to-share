@@ -1,0 +1,38 @@
+2023-02-27 14:34:05	[ERR]:	main.go:33 listen tcp: lookup tcp/1818
+: nodename nor servname provided, or not known
+2023-02-27 14:34:30	[ERR]:	main.go:33 listen tcp: lookup tcp/9090
+: nodename nor servname provided, or not known
+2023-02-28 23:34:22	[ERR]:	wallpaper.go:25 Get "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US": read tcp 192.168.0.163:56583->202.89.233.100:443: read: operation timed out Failed to retrieve Bing wallpaper
+2023-02-28 23:34:22	[ERR]:	wallpaper.go:25 Get "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US": read tcp 192.168.0.163:56583->202.89.233.100:443: read: operation timed out Failed to retrieve Bing wallpaper
+2023-02-28 23:34:22	[ERR]:	wallpaper.go:25 Get "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US": read tcp 192.168.0.163:56583->202.89.233.100:443: read: operation timed out Failed to retrieve Bing wallpaper
+2023-02-28 23:34:22	[ERR]:	wallpaper.go:25 Get "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US": read tcp 192.168.0.163:56583->202.89.233.100:443: read: operation timed out Failed to retrieve Bing wallpaper
+2023-02-28 23:34:22	[ERR]:	wallpaper.go:25 Get "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US": read tcp 192.168.0.163:56583->202.89.233.100:443: read: operation timed out Failed to retrieve Bing wallpaper
+2023-02-28 23:34:22	[ERR]:	wallpaper.go:25 Get "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US": read tcp 192.168.0.163:56583->202.89.233.100:443: read: operation timed out Failed to retrieve Bing wallpaper
+2023-02-28 23:34:22	[ERR]:	wallpaper.go:25 Get "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US": read tcp 192.168.0.163:56583->202.89.233.100:443: read: operation timed out Failed to retrieve Bing wallpaper
+2023-02-28 23:34:22	[ERR]:	wallpaper.go:25 Get "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US": read tcp 192.168.0.163:56583->202.89.233.100:443: read: operation timed out Failed to retrieve Bing wallpaper
+2023-02-28 23:34:34	[ERR]:	wallpaper.go:25 Get "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US": dial tcp: lookup www.bing.com: no such host Failed to retrieve Bing wallpaper
+2023-02-28 23:34:38	[ERR]:	wallpaper.go:25 Get "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US": dial tcp: lookup www.bing.com: no such host Failed to retrieve Bing wallpaper
+2023-02-28 23:36:27	[ERR]:	wallpaper.go:25 Get "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US": dial tcp: lookup www.bing.com: no such host Failed to retrieve Bing wallpaper
+2023-03-16 11:25:21	[ERR]:	wallpaper.go:25 Get "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US": read tcp 172.20.10.3:55080->202.89.233.101:443: read: connection reset by peer Failed to retrieve Bing wallpaper
+2023-03-16 11:26:06	[ERR]:	wallpaper.go:25 Get "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US": read tcp 172.20.10.3:55098->202.89.233.100:443: read: connection reset by peer Failed to retrieve Bing wallpaper
+2023-03-16 11:31:12	[ERR]:	wallpaper.go:25 Get "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US": net/http: TLS handshake timeout Failed to retrieve Bing wallpaper
+2023-03-16 11:37:05	[ERR]:	wallpaper.go:25 Get "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US": stream error: stream ID 1; CANCEL; received from peer Failed to retrieve Bing wallpaper
+2023-03-16 11:48:03	[ERR]:	main.go:24 [db connection failed] Database name: message: Error 1045 (28000): Access denied for user ''@'localhost' (using password: YES)
+2023-03-16 11:49:03	[ERR]:	main.go:24 [db connection failed] Database name: message: Error 1045 (28000): Access denied for user ''@'localhost' (using password: YES)
+2023-03-16 11:49:24	[ERR]:	main.go:24 [db connection failed] Database name: demo: Error 1045 (28000): Access denied for user ''@'localhost' (using password: YES)
+2023-03-16 11:49:30	[ERR]:	main.go:24 [db connection failed] Database name: demo: Error 1045 (28000): Access denied for user ''@'localhost' (using password: YES)
+2023-03-16 11:49:51	[ERR]:	main.go:24 [db connection failed] Database name: demo: Error 1045 (28000): Access denied for user ''@'localhost' (using password: YES)
+2023-03-16 11:51:25	[ERR]:	main.go:24 [db connection failed] Database name: demo: Error 1045 (28000): Access denied for user ''@'localhost' (using password: YES)
+2023-03-19 10:30:02	[ERR]:	main.go:35 listen tcp :9990: bind: address already in use
+2023-03-27 11:38:51	[ERR]:	main.go:35 listen tcp :9990: bind: address already in use
+2023-03-30 08:54:31	[ERR]:	main.go:35 listen tcp :9990: bind: address already in use
+2023-03-30 14:58:51	[ERR]:	main.go:24 [db connection failed] Database name: demo: Error 1045 (28000): Access denied for user ''@'localhost' (using password: YES)
+2023-03-30 21:26:32	[ERR]:	main.go:29 [db connection failed] Database name: demo: Error 1045 (28000): Access denied for user 'root,'@'localhost' (using password: YES)
+2023-03-30 21:27:49	[ERR]:	main.go:29 [db connection failed] Database name: demo: Error 1045 (28000): Access denied for user 'root,'@'localhost' (using password: YES)
+2023-03-30 21:28:25	[ERR]:	main.go:29 [db connection failed] Database name: demo: Error 1045 (28000): Access denied for user 'root,'@'localhost' (using password: YES)
+2023-03-30 21:29:04	[ERR]:	main.go:29 [db connection failed] Database name: demo: Error 1045 (28000): Access denied for user 'root,'@'localhost' (using password: YES)
+2023-03-31 10:37:16	[ERR]:	main.go:41 listen tcp :9990: bind: address already in use
+2023-03-31 10:38:50	[ERR]:	main.go:41 listen tcp :9990: bind: address already in use
+2023-03-31 10:40:33	[ERR]:	main.go:30 [db connection failed] Database name: : dial tcp :0: connect: can't assign requested address
+2023-03-31 15:42:35	[ERR]:	main.go:42 listen tcp :9990: bind: address already in use
+2023-03-31 20:58:49	[ERR]:	login.go:90 token has invalid claims: token is expired
