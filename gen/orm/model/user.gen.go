@@ -14,6 +14,7 @@ const TableNameUser = "user"
 type User struct {
 	UID      int32     `gorm:"column:uid;primaryKey;autoIncrement:true" json:"uid"`                  // 用户ID
 	Username string    `gorm:"column:username;not null" json:"username"`                             // 用户名
+	Avatar   *string   `gorm:"column:avatar" json:"avatar"`                                          // 用户头像
 	Uemail   *string   `gorm:"column:uemail" json:"uemail"`                                          // 用户邮件
 	IsAdmin  bool      `gorm:"column:isAdmin;not null" json:"isAdmin"`                               // 是否是管理
 	Password string    `gorm:"column:password;not null" json:"password"`                             // 密码

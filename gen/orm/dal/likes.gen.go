@@ -41,8 +41,8 @@ type like struct {
 
 	ALL    field.Asterisk
 	ID     field.Int32
-	UserID field.Int32
-	PostID field.Int32
+	UserID field.Int32 // 用户ID
+	PostID field.Int32 // 帖子ID
 
 	fieldMap map[string]field.Expr
 }

@@ -17,6 +17,7 @@ import (
 
 var (
 	Q            = new(Query)
+	Category     *category
 	Feedback     *feedback
 	Like         *like
 	LoginSession *loginSession
@@ -26,6 +27,7 @@ var (
 
 func SetDefault(db *gorm.DB, opts ...gen.DOOption) {
 	*Q = *Use(db, opts...)
+	Category = &Q.Category
 	Feedback = &Q.Feedback
 	Like = &Q.Like
 	LoginSession = &Q.LoginSession
@@ -36,6 +38,7 @@ func SetDefault(db *gorm.DB, opts ...gen.DOOption) {
 func Use(db *gorm.DB, opts ...gen.DOOption) *Query {
 	return &Query{
 		db:           db,
+		Category:     newCategory(db, opts...),
 		Feedback:     newFeedback(db, opts...),
 		Like:         newLike(db, opts...),
 		LoginSession: newLoginSession(db, opts...),
@@ -47,6 +50,7 @@ func Use(db *gorm.DB, opts ...gen.DOOption) *Query {
 type Query struct {
 	db *gorm.DB
 
+	Category     category
 	Feedback     feedback
 	Like         like
 	LoginSession loginSession
@@ -59,6 +63,7 @@ func (q *Query) Available() bool { return q.db != nil }
 func (q *Query) clone(db *gorm.DB) *Query {
 	return &Query{
 		db:           db,
+		Category:     q.Category.clone(db),
 		Feedback:     q.Feedback.clone(db),
 		Like:         q.Like.clone(db),
 		LoginSession: q.LoginSession.clone(db),
@@ -78,6 +83,7 @@ func (q *Query) WriteDB() *Query {
 func (q *Query) ReplaceDB(db *gorm.DB) *Query {
 	return &Query{
 		db:           db,
+		Category:     q.Category.replaceDB(db),
 		Feedback:     q.Feedback.replaceDB(db),
 		Like:         q.Like.replaceDB(db),
 		LoginSession: q.LoginSession.replaceDB(db),
@@ -87,6 +93,7 @@ func (q *Query) ReplaceDB(db *gorm.DB) *Query {
 }
 
 type queryCtx struct {
+	Category     *categoryDo
 	Feedback     *feedbackDo
 	Like         *likeDo
 	LoginSession *loginSessionDo
@@ -96,6 +103,7 @@ type queryCtx struct {
 
 func (q *Query) WithContext(ctx context.Context) *queryCtx {
 	return &queryCtx{
+		Category:     q.Category.WithContext(ctx),
 		Feedback:     q.Feedback.WithContext(ctx),
 		Like:         q.Like.WithContext(ctx),
 		LoginSession: q.LoginSession.WithContext(ctx),

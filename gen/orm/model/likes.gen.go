@@ -9,8 +9,8 @@ const TableNameLike = "likes"
 // Like mapped from table <likes>
 type Like struct {
 	ID     int32 `gorm:"column:ID;primaryKey;autoIncrement:true" json:"ID"`
-	UserID int32 `gorm:"column:UserID;primaryKey" json:"UserID"`
-	PostID int32 `gorm:"column:PostID;primaryKey" json:"PostID"`
+	UserID int32 `gorm:"column:UserID;primaryKey" json:"UserID"` // 用户ID
+	PostID int32 `gorm:"column:PostID;primaryKey" json:"PostID"` // 帖子ID
 }
 
 // TableName Like's table name

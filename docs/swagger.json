@@ -1,7 +1,9 @@
 {
     "swagger": "2.0",
     "info": {
-        "contact": {}
+        "contact": {},
+        "version": "",
+        "title": ""
     },
     "paths": {
         "/api/v1/articles/{id}": {

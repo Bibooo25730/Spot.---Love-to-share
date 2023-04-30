@@ -30,6 +30,8 @@ func Router(g *gin.Engine) {
 		users.POST("/message", auth.Middleware(), user_services.Message)
 		users.POST("/feedback", auth.Middleware(), user_services.FeedBack)
 		users.POST("/logout", auth.Middleware(), user_services.Logout)
+
+		users.POST("/publish", auth.Middleware(), user_services.Publish)
 	}
 
 	root := g.Group("/root")
